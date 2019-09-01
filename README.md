@@ -13,6 +13,7 @@
 - 사용자 모델 - 인증, 프로필 수정, 패스워드 변경 기능
 - 개발 환경 static file 자동 refresh
 - static 파일관리 whitenoise
+- 실서버 서버 구동용 gunicorn 설치
 
 # 2. 프로젝트 시작시 설정 필요
 
