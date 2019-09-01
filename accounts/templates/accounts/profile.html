@@ -1,0 +1,20 @@
+{% extends "accounts/layout.html" %}
+
+{% block content %}
+    <h2>{{ user.username }}'s Profile</h2>
+
+    <h3>이메일</h3>
+    {{ user.email|default:"&dash;" }}
+
+    <h3>전화번호</h3>
+    {{ user.profile.phone|default:"&dash;" }}
+
+    <h3>주소</h3>
+    {{ user.profile.address|default:"&dash;" }}
+
+    <hr/>
+
+    <a href="{% url "profile_edit" %}">프로필 수정</a>
+    <a href="{% url "password_change" %}">암호 변경하기</a>
+{% endblock %}
+

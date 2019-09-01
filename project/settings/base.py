@@ -20,10 +20,11 @@ INSTALLED_APPS = [
 # 모델 앱
 INSTALLED_APPS += [
     'board',
-    'user',
+    'accounts',
+    'common',
 ]
 
-#추가 앱
+# 추가 앱
 INSTALLED_APPS += [
     'bootstrap3',
 ]
@@ -92,12 +93,27 @@ STATICFILES_DIRS = [  # note 실제 디렉토리 경로
 ]
 STATIC_ROOT = os.path.abspath(os.path.join(BASE_DIR, './static'))
 
-#파일 업로드 시 디렉토리 설정
+# 파일 업로드 시 디렉토리 설정
 MEDIA_URL = '/media/'
-MEDIA_ROOT =  os.path.abspath(os.path.join(BASE_DIR, './media'))
+MEDIA_ROOT = os.path.abspath(os.path.join(BASE_DIR, './media'))
+
 
 SITE_ID = 1
 
 MAX_UPLOAD_SIZE = 2621440
 
-AUTH_USER_MODEL = 'user.User'
+from django.urls import reverse_lazy
+
+LOGIN_URL = reverse_lazy('login')
+# LOGIN_REDIRECT_URL = reverse_lazy('profile')
+LOGOUT_REDIRECT_URL = reverse_lazy('login')
+
+AUTH_USER_MODEL = 'accounts.User'
+
+# 이메일 설정
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+EMAIL_HOST = 'localhost'
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = ''
+EMAIL_USE_TLS = False
+EMAIL_USE_SSL = False

@@ -9,7 +9,9 @@
 - 레이아웃 분리
 - INSTALLED_APPS 기존 설치랑 추가 설치된 앱 분리
 - django-bootstrap3
-
+- 개발환경 쿼리 로깅
+- 사용자 모델 - 인증, 프로필 수정, 패스워드 변경 기능
+- 개발 환경 static file 자동 refresh
 
 # 2. 프로젝트 시작시 설정 필요
 
@@ -61,10 +63,11 @@ pip install pipenv
 }
 ```
 
-6. 데이터베이스 마이그레이션 - 기본 django 테이블 생성
+6. 데이터베이스 마이그레이션
 
 ```bash
 python manage.py makemigrations
+python manage.py makemigrations accounts
 python manage.py migrate
 ```
 
