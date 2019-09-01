@@ -16,6 +16,7 @@
 - 실서버 서버 구동용 gunicorn 설치
 - 이미지 처리 관련 라이브러리 추가
 - 간단한 게시판 모델(board) CRUD : Class based view, function based view 예제포함
+- 테스트 코드 예제코드 작성
 
 
 # 2. 프로젝트 시작시 설정 필요
@@ -87,7 +88,6 @@ python manage.py createsuperuser
 ### TODO 보완 필요
 
 - ToastUI Editor달기
-- 테스트 코드 작성
 - django rest framework 적용
 - humanize 필터 적용
 - 트랜잭션처리

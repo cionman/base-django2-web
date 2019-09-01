@@ -12,7 +12,6 @@ ipython = "*"
 [packages]
 django = "*"
 django-bootstrap3 = "*"
-whitenoise = "*"
 gunicorn = "*"
 pilkit = "*"
 django-imagekit = "*"
