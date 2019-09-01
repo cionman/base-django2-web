@@ -12,6 +12,7 @@
 - 개발환경 쿼리 로깅
 - 사용자 모델 - 인증, 프로필 수정, 패스워드 변경 기능
 - 개발 환경 static file 자동 refresh
+- static 파일관리 whitenoise
 
 # 2. 프로젝트 시작시 설정 필요
 
@@ -29,7 +30,7 @@ pip install pipenv
     ```
     - 실서버환경
     ```bash
-    pipenv install --dev
+    pipenv install
     ```
 
 4. 환경설정 (development, production) 분리에 따른 시스템 환경변수 설정

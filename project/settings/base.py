@@ -92,6 +92,7 @@ STATICFILES_DIRS = [  # note 실제 디렉토리 경로
     os.path.join(BASE_DIR, "assets"),
 ]
 STATIC_ROOT = os.path.abspath(os.path.join(BASE_DIR, './static'))
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # 파일 업로드 시 디렉토리 설정
 MEDIA_URL = '/media/'
