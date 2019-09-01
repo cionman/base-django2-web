@@ -8,6 +8,7 @@
 - django-extension 
 - 레이아웃 분리
 - INSTALLED_APPS 기존 설치랑 추가 설치된 앱 분리
+- django-bootstrap3
 
 
 # 2. 프로젝트 시작시 설정 필요

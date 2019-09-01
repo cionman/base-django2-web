@@ -11,6 +11,7 @@ ipython = "*"
 
 [packages]
 django = "*"
+django-bootstrap3 = "*"
 
 [requires]
 python_version = "3.6"

@@ -7,8 +7,8 @@ from .base import *
 SECRET_KEY = "buq*!eias((btkx11b689964cs7-at1gw%k^!oypi^1357f6@"
 DEBUG = True
 
+# addon
 INSTALLED_APPS += [
-    # addon
     'django_extensions',
     'debug_toolbar',
 ]

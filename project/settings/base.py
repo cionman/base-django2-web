@@ -23,6 +23,11 @@ INSTALLED_APPS += [
     'user',
 ]
 
+#추가 앱
+INSTALLED_APPS += [
+    'bootstrap3',
+]
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -93,3 +98,5 @@ MEDIA_ROOT =  os.path.abspath(os.path.join(BASE_DIR, './media'))
 SITE_ID = 1
 
 MAX_UPLOAD_SIZE = 2621440
+
+AUTH_USER_MODEL = 'user.User'
