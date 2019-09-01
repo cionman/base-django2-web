@@ -27,6 +27,7 @@ INSTALLED_APPS += [
 # 추가 앱
 INSTALLED_APPS += [
     'bootstrap3',
+    'imagekit',
 ]
 
 MIDDLEWARE = [

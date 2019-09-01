@@ -14,6 +14,9 @@ django = "*"
 django-bootstrap3 = "*"
 whitenoise = "*"
 gunicorn = "*"
+pilkit = "*"
+django-imagekit = "*"
+pillow = "*"
 
 [requires]
 python_version = "3.6"

@@ -14,6 +14,9 @@
 - 개발 환경 static file 자동 refresh
 - static 파일관리 whitenoise
 - 실서버 서버 구동용 gunicorn 설치
+- 이미지 처리 관련 라이브러리 추가
+- 간단한 게시판 모델(board) CRUD : Class based view, function based view 예제포함
+
 
 # 2. 프로젝트 시작시 설정 필요
 
@@ -70,6 +73,7 @@ pip install pipenv
 ```bash
 python manage.py makemigrations
 python manage.py makemigrations accounts
+python manage.py makemigrations board
 python manage.py migrate
 ```
 
@@ -82,9 +86,6 @@ python manage.py createsuperuser
 
 ### TODO 보완 필요
 
-- FBV 예제, CBV 예제(FormView, ListView, DetailView)
-- 폼처리, Validatior 사용
-- 이미자파일 처리, 섬네일만들기, pilkit사용
 - ToastUI Editor달기
 - 테스트 코드 작성
 - django rest framework 적용
